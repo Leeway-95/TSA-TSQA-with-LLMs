@@ -32,6 +32,8 @@ The horizontal axis indicates whether LLM parameters are trained, and the vertic
 
 Date|Paper|Institute|Publication
 ---|---|---|---
+5 <br>Nov <br>2025|[A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models](https://arxiv.org/abs/2509.11575)|University of California|Preprint
+1 <br>Sep <br>2025|[When LLM Meets Time Series: Can LLMs Perform Multi-Step Time Series Reasoning and Inference](https://arxiv.org/abs/2509.11575)|University of Southern California|Preprint
 5 <br>May <br>2025|[Towards Cross-Modality Modeling for Time Series Analytics: A Survey in the LLM Era](https://arxiv.org/abs/2505.02583)|Nanyang Technological University|IJCAI'25
 14 <br>Mar <br>2025|[How Can Time Series Analysis Benefit From Multiple Modalities? A Survey and Outlook](https://arxiv.org/abs/2503.11835)|Georgia Institute of Technology|Preprint
 12 <br>Mar <br>2025|[Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey](https://arxiv.org/abs/2503.13502)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'25
@@ -52,6 +54,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 21 <br>Mar <br>2025|[MTBench: A Multimodal Time Series Benchmark for Temporal Reasoning and Question Answering](https://arxiv.org/abs/2503.16858)**[**[**Code**](https://github.com/Graph-and-Geometric-Learning/MTBench)**]**|Yale University|Preprint|Financial|GPT-4o, <br>Gemini, <br>Claude, <br>DeepSeek, <br>Llama3.1
 25 <br>Jun <br>2025|[ITFormer: Bridging Time Series and Natural Language for Multi-Modal QA with Large-Scale Multitask Dataset](https://arxiv.org/abs/2506.20093)**[**[**Code**](https://pandalin98.github.io/itformer_site/)**]**|Shanghai Jiao Tong University|ICML'25|General|GPT-4o, <br>Gemini-Pro
 5 <br>Jun <br>2025|[Context is Key: A Benchmark for Forecasting with Essential Textual Information (CiK)](https://arxiv.org/abs/2410.18959)**[**[**Code**](https://servicenow.github.io/context-is-key-forecasting/v0/)**]**|ServiceNow Research|ICML'25|General|Qwen-2.5-7B, <br>Llama-3-70B, <br>Llama-3.1-405B
+13 <br>Mar <br>2025|[Chat-TS: Enhancing Multi-Modal Reasoning Over Time-Series and Natural Language Data](https://arxiv.org/abs/2503.10883)|Queen’s University|Preprint|General|LLama 3.1-8B
 3 <br>Mar <br>2025|[SensorQA: A Question Answering Benchmark for Daily-Life Monitoring](https://arxiv.org/abs/2501.04974)**[**[**Code**](https://github.com/benjamin-reichman/SensorQA)**]**|Georgia Institute of Technology|SenSys'25|IoT|GPT-3.5-Turbo, <br>GPT-4-Turbo 
 18 <br>Oct <br>2024|[TimeSeriesExam: A time series understanding exam](https://arxiv.org/abs/2410.14752)**[**[**Code**](https://huggingface.co/datasets/AutonLab/TimeSeriesExam1)**]**|Carnegie Mellon University|NeurIPS'24 Workshop|General|GPT-4o, Gemini, Phi3.5
 12 <br>Jun <br>2024|[Time-MMD: Multi-Domain Multimodal Dataset for Time Series Analysis](https://arxiv.org/abs/2406.08627)**[**[**Code**](https://github.com/AdityaLab/Time-MMD)**]**|Georgia Institute of Technology|NeurIPS'24|General|LLaMA-3, <br>GPT-2
@@ -137,6 +140,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
+6 <br>Jan <br> 2026|[STReasoner: Empowering LLMs for Spatio-Temporal Reasoning in Time Series via Spatial-Aware Reinforcement Learning](https://arxiv.org/abs/2601.03248)**[**[**Code**](https://github.com/LingFengGold/STReasoner)**]**|Emory University|Preprint|General|GPT-5.2, <br>Claude-4.5, <br>Qwen3-8B
 29 <br>Dec <br> 2025|[Alpha-R1: Alpha Screening with LLM Reasoning via Reinforcement Learning](https://www.arxiv.org/abs/2512.23515)**[**[**Code**](https://github.com/FinStep-AI/Alpha-R1)**]**|Shanghai Jiao Tong University|Preprint|General|Qwen3-8B
 9 <br>Nov <br> 2025|[TimeSense: Making Large Language Models Proficient in Time-Series Analysis](https://arxiv.org/abs/2511.06344)|Tsinghua University|Preprint|General|Qwen3-8B, <br>GPT-5
 28 <br>Jun <br> 2025|[Time-MQA: Time Series Multi-Task Question Answering with Context Enhancement](https://arxiv.org/abs/2503.01875)**[**[**Code**](https://huggingface.co/datasets/Time-MQA/TSQA)**]**|University of Oxford|ACL'25|General|Mistral-7B
