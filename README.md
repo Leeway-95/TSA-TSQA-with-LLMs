@@ -66,7 +66,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
-11 <br>May<br>2025|[Can LLMs Understand Time Series Anomalies? (AnomLLM)](https://arxiv.org/abs/2410.05440)|University of California|Preprint|General|Qwen-VL-Chat, <br>InternVL2-Llama3-76B, <br>GPT-4o-mini, <br>Gemini-1.5-Flash
+11 <br>May<br>2025|[Can LLMs Understand Time Series Anomalies? (AnomLLM)](https://arxiv.org/abs/2410.05440)|University of California|ICLR'25|General|Qwen-VL-Chat, <br>InternVL2-Llama3-76B, <br>GPT-4o-mini, <br>Gemini-1.5-Flash
 25 <br>Apr <br>2025|[A Picture is Worth A Thousand Numbers: Enabling LLMs Reason about Time Series via Visualization (TimerBed)](https://arxiv.org/abs/2411.06018)**[**[**Code**](https://github.com/AdityaLab/DeepTime/)**]**|Georgia Institute of Technology|NAACL'25|General|GPT-4o-mini, <br>Qwen2-VL-72B
 16 <br>Feb <br>2025|[TableTime: Reformulating Time Series Classification as Training-Free Table Understanding with Large Language Models](https://arxiv.org/abs/2411.15737)**[**[**Code**](https://anonymous.4open.science/r/TableTime-5E4D)**]**|University of Science and Technology of China|CIKM'25|General|Llama-3.1
 24 <br>Jan <br>2025|[Argos: Agentic Time-Series Anomaly Detection with Autonomous Rule Generation via Large Language Models](https://arxiv.org/abs/2501.14170)|University of Washington|Preprint|General|GPT-3.5-Turbo, <br>GPT-4o
