@@ -1,41 +1,31 @@
 # From Time Series Analysis to Question Answering: A Survey in the LLM Era
 
-[![GitHub Stars](https://img.shields.io/github/stars/Leeway-95/Aligning-TSD-with-LLM?style=social)](https://github.com/Leeway-95/Aligning-TSD-with-LLM/stargazers)
-![Topic](https://img.shields.io/badge/Time%20Series-Alignment--LLMs-blueviolet)
+[![GitHub Stars](https://img.shields.io/github/stars/Leeway-95/TSA-TSQA-with-LLMs?style=social)](https://github.com/Leeway-95/TSA-TSQA-with-LLMs/stargazers)
+![Topic](https://img.shields.io/badge/Time%20Series-TSA--TSQA-blueviolet)
 [![How to Cite](https://img.shields.io/badge/Cite-bibtex-orange)](#citation)
 
 ✨ If you find our <em>position</em> useful for your research, please consider giving it a <strong>star ⭐ on GitHub</strong> to stay updated with future releases.
 
 ## Abstract
-Recently, Large Language Models (LLMs) have emerged as a novel paradigm for Time Series Analysis (TSA), leveraging strong language capabilities to support tasks such as forecasting and anomaly detection. However, a fundamental objective gap persists between TSA and LLMs. LLMs are pre-trained to optimize semantic relevance for question answering, rather than objectives specialized for TSA. To bridge this gap, Time Series Question Answering (TSQA) reframes TSA as answering natural language queries over numerical sequences, enabling users to interact with time series through language instead of predefined analytical pipelines. This survey provides an up-to-date overview of economical, flexible, and generalizable alignment paradigms to support evolution from TSA to TSQA. We first propose a taxonomy that organizes existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment, and provide practical guidance for selecting among them. We then analyze representative TSQA datasets from the perspectives of data characteristics and domains. Finally, we discuss challenges and future directions.
+Recently, Large Language Models (LLMs) have introduced a novel paradigm in Time Series Analysis (TSA), leveraging strong language capabilities to support tasks such as forecasting and anomaly detection. However, these analysis tasks cannot adequately cover temporal language tasks, such as interpretation and captioning. A fundamental gap remains between TSA and LLMs: LLMs are pre-trained to optimize natural language relevance for question answering rather than objectives specialized for TSA. To bridge this gap, TSA is evolving toward Time Series Question Answering (TSQA), shifting from expert-driven and task-specific analysis to user-driven and task-unified question answering. TSQA depends on flexible exploration rather than predefined TSA pipelines. 
+We propose a taxonomy that reflects the evolution from TSA to TSQA, driven by a shift from external to internal alignment. We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment, and provide practical guidance for flexible, economical, and generalizable selection of alignment paradigms.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
-
 
 The horizontal axis indicates whether LLM parameters are trained, and the vertical axis indicates whether temporal modifications are required. Temporal modification refers to adapting time series for LLMs, including both modifications outside the LLM and adjustments to the internal LLM architecture. These two dimensions determine the three alignment paradigms.
 (a) Injective Alignment involves no temporal modification and adopts frozen LLMs. This design preserves the original LLM parameters.
 (b) Bridging Alignment introduces temporal modification while still employing frozen LLMs. This design enables joint processing of time series and textual inputs while preserving all parameters of the original LLM.
 (c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
 
-<!--
-- [Taxonomy](#taxonomy)
-  - [Prompting](#prompting)
-  - [Quantization](#quantization)
-  - [Aligning](#aligning)
-  - [Vision](#vision)
-  - [Tool](#tool)
-- [Datasets](#datasets)
-- [Citation](#citation)
--->
-
 ### Relevant Survey:
 
 Date|Paper|Institute|Publication
 ---|---|---|---
 5 <br>Nov <br>2025|[A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models](https://arxiv.org/abs/2509.11575)|University of California|Preprint
+2 <br>Oct <br>2025|[How Can Time Series Analysis Benefit From Multiple Modalities? A Survey and Outlook](https://arxiv.org/abs/2503.11835)|Georgia Institute of Technology|Preprint
 1 <br>Sep <br>2025|[When LLM Meets Time Series: Can LLMs Perform Multi-Step Time Series Reasoning and Inference](https://arxiv.org/abs/2509.11575)|University of Southern California|Preprint
 5 <br>May <br>2025|[Towards Cross-Modality Modeling for Time Series Analytics: A Survey in the LLM Era](https://arxiv.org/abs/2505.02583)|Nanyang Technological University|IJCAI'25
-14 <br>Mar <br>2025|[How Can Time Series Analysis Benefit From Multiple Modalities? A Survey and Outlook](https://arxiv.org/abs/2503.11835)|Georgia Institute of Technology|Preprint
+17 <br>Mar <br>2025|[Multi-modal Time Series Analysis: A Tutorial and Survey](https://arxiv.org/abs/2503.13709)|University of Connecticut|KDD'25
 12 <br>Mar <br>2025|[Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey](https://arxiv.org/abs/2503.13502)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'25
 3 <br>Feb <br>2025|[Position: Empowering Time Series Reasoning with Multimodal LLMs](https://arxiv.org/abs/2502.01477)|University of Oxford|Preprint
 21 <br>Mar <br>2024|[Foundation Models for Time Series Analysis: A Tutorial and Survey](https://arxiv.org/abs/2403.14735)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'24
@@ -66,6 +56,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
+12 <br>Jan<br>2026|[Enhancing Large Language Models for Time-Series Forecasting via Vector-Injected In-Context Learnin (LVICL)](https://arxiv.org/abs/2601.07903)|Institute of Software, Chinese Academy of Sciences|Preprint|General|LLaMA-7B, <br>GPT-2
 11 <br>May<br>2025|[Can LLMs Understand Time Series Anomalies? (AnomLLM)](https://arxiv.org/abs/2410.05440)|University of California|ICLR'25|General|Qwen-VL-Chat, <br>InternVL2-Llama3-76B, <br>GPT-4o-mini, <br>Gemini-1.5-Flash
 25 <br>Apr <br>2025|[A Picture is Worth A Thousand Numbers: Enabling LLMs Reason about Time Series via Visualization (TimerBed)](https://arxiv.org/abs/2411.06018)**[**[**Code**](https://github.com/AdityaLab/DeepTime/)**]**|Georgia Institute of Technology|NAACL'25|General|GPT-4o-mini, <br>Qwen2-VL-72B
 16 <br>Feb <br>2025|[TableTime: Reformulating Time Series Classification as Training-Free Table Understanding with Large Language Models](https://arxiv.org/abs/2411.15737)**[**[**Code**](https://anonymous.4open.science/r/TableTime-5E4D)**]**|University of Science and Technology of China|CIKM'25|General|Llama-3.1
@@ -97,10 +88,12 @@ Date|Paper|Institute|Publication|Domain|LLMs
 19 <br>May<br>2025|[Decoding Time Series with LLMs: A Multi-Agent Framework for Cross-Domain Annotation (TESSA)](https://arxiv.org/abs/2410.17462)|The Pennsylvania State University |Preprint|General|GPT-4o, <br>LLaMA3.1-8B, <br>Qwen2-7B
 13 <br>May <br>2025|[MADLLM: Multivariate Anomaly Detection via Pre-trained LLMs](https://arxiv.org/abs/2504.09504)|Huazhong University of Science and Technology|ICME'25|General|Unknown
 12 <br>May <br>2025|[MedualTime: A Dual-Adapter Language Model for Medical Time Series-Text Multimodal Learning](https://arxiv.org/abs/2406.06620)**[**[**Code**](https://github.com/start2020/MedualTime)**]**|Hong Kong University of Science and Technology|IJCAI'25|General|GPT-2, <br>BERT
+12 <br>May <br>2025|[LLM-TPF: Multiscale Temporal Periodicity-Semantic Fusion LLMs for Time Series Forecasting](https://www.ijcai.org/proceedings/2025/671)**[**[**Code**](https://github.com/switchsky/LLM-TPF)**]**|Zhejiang University of Technology|IJCAI'25|Energy|GPT-2
 4 <br>May <br>2025|[Efficient Multivariate Time Series Forecasting via Calibrated Language Models with Privileged Knowledge Distillation (TimeKD)](https://arxiv.org/abs/2505.02138)**[**[**Code**](https://github.com/ChenxiLiu-HNU/TimeKD)**]**|Nanyang Technological University|ICDE'25|General|BERT, <br>GPT-2, <br>LLaMA-3.2
 8 <br>Apr <br>2025|[CALF: Aligning LLMs for Time Series Forecasting via Cross-modal Fine-Tuning](https://arxiv.org/abs/2403.07300)**[**[**Code**](https://github.com/Hank0626/CALF)**]**|Tsinghua University|AAAI'25|General|GPT-2
 5 <br>Apr <br>2025|[Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series (DECA)](https://arxiv.org/abs/2501.03747)**[**[**Code**](https://github.com/tokaka22/ICLR25-FSCA)**]**|The Hong Kong Polytechnic University|ICLR'25|General|GPT-2
 20 <br>Feb <br>2025|[LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters](https://arxiv.org/abs/2308.08469v6)|National Yang Ming Chiao Tung University|TIST'25|General|GPT-2
+19 <br>Feb <br>2025|[MERIT: Multi-Agent Collaboration for Unsupervised Time Series Representation Learning](https://aclanthology.org/2025.findings-acl.1231/)|Nanjing University|ACL'25|General|LLaMA3.1-8B
 19 <br>Feb <br>2025|[Adapting Large Language Models for Time Series Modeling via a Novel Parameter-efficient Adaptation Method (Time-LlaMA)](https://arxiv.org/abs/2502.13725)|Nanyang Technological University|ACL'25|General|Llama-2
 17 <br>Feb <br>2025|[TimeCAP: Learning to Contextualize, Augment, and Predict Time Series Events with Large Language Model Agents](https://arxiv.org/abs/2502.11418)**[**[**Code**](https://github.com/geon0325/TimeCAP)**]**|Korea Advanced Institute of Science and Technology|AAAI'25|General|GPT-4, <br>BERT
 6 <br>Feb <br>2025|[Time-VLM: Exploring Multimodal Vision-Language Models for Augmented Time Series Forecasting](https://arxiv.org/abs/2502.04395)|Hong Kong University of Science and Technology (Guangzhou)|ICML'25|General|ViLT, <br>CLIP, <br>BLIP-2
@@ -140,6 +133,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
+20 <br>Jan <br> 2026|[TimeART: Towards Agentic Time Series Reasoning via Tool-Augmentation](https://arxiv.org/abs/2601.13653)|East China Normal University|Preprint|General|Qwen-3, <br>GPT-4o, <br>Gemini-2.0
 6 <br>Jan <br> 2026|[STReasoner: Empowering LLMs for Spatio-Temporal Reasoning in Time Series via Spatial-Aware Reinforcement Learning](https://arxiv.org/abs/2601.03248)**[**[**Code**](https://github.com/LingFengGold/STReasoner)**]**|Emory University|Preprint|General|GPT-5.2, <br>Claude-4.5, <br>Qwen3-8B
 29 <br>Dec <br> 2025|[Alpha-R1: Alpha Screening with LLM Reasoning via Reinforcement Learning](https://www.arxiv.org/abs/2512.23515)**[**[**Code**](https://github.com/FinStep-AI/Alpha-R1)**]**|Shanghai Jiao Tong University|Preprint|General|Qwen3-8B
 9 <br>Nov <br> 2025|[TimeSense: Making Large Language Models Proficient in Time-Series Analysis](https://arxiv.org/abs/2511.06344)|Tsinghua University|Preprint|General|Qwen3-8B, <br>GPT-5
@@ -151,6 +145,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 19 <br>Mar <br>2024|[Advancing Time Series Classification with Multimodal Language Modeling (InstructTime)](https://arxiv.org/abs/2403.12371)**[**[**Code**](https://github.com/Mingyue-Cheng/InstructTime)**]**|University of Science and Technology of China|WSDM'25|General|GPT-2
 21 <br>Dec <br>2023|[BloombergGPT: A Large Language Model for Finance](https://arxiv.org/abs/2303.17564)|Bloomberg|Preprint|Financial|GPT-NeoX, <br>OPT, <br>BLOOM
 
+<!--
 ### Dataset
 
 Dataset|Domain|Characteristic|Representation|Statistic
@@ -167,6 +162,7 @@ Dataset|Domain|Characteristic|Representation|Statistic
 [TS-Insights](https://drive.google.com/drive/folders/1qGXigxE5GvmF1oLuGXaqLMkRgwoQfZ7V)|General|Multivariate, <br>trend, seasonality|Number+Text<br>+Image|100,000 samples
 [TimeMMD](https://github.com/AdityaLab/Time-MMD)|General|Multivariate, <br>stationarity, trends|Text(Number)|496 samples
 [CiK](https://github.com/ServiceNow/context-is-key-forecasting)|General|Univariate, multivariate, <br>stationarity, trend, <br>noise, periodicity|Number+Text|2,644 samples
+-->
 
 ## Contact Us
 For inquiries or further assistance, contact us at [leeway@ruc.edu.cn](mailto:leeway@ruc.edu.cn).
