@@ -81,6 +81,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 ### Bridging Alignment:
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
+20 <br>Jan <br>2026|[ChatAD: Reasoning-Enhanced Time-Series Anomaly Detection with Multi-Turn Instruction Evolution](https://arxiv.org/abs/2601.13546)|Nankai University|Preprint|General|GPT-5, <br>DeepSeek-R1
 27 <br>Dec <br>2025|[Chain-of-thought Reviewing and Correction for Time Series Question Answering (T3LLM)](https://www.arxiv.org/abs/2512.22627)|University of Science and Technology of China|Preprint|General|DeepSeek-R1, <br>Qwen2.5-14B
 19 <br>Dec <br>2025|[Hierarchical Multimodal LLMs with Semantic Space Alignment for Enhanced Time Series Classification (HiTime)](https://arxiv.org/abs/2410.18686)**[**[**Code**](https://github.com/Xiaoyu-Tao/HiTime)**]**|University of Science and Technology of China|TIST'25|General|LLaMA3.1-8B <br>GPT-2
 25 <br>Oct <br>2025|[TimeXL: Explainable Multi-modal Time Series Prediction with LLM-in-the-Loop](https://arxiv.org/abs/2503.01013)|University of Connecticut|NeurIPS'25|General|GPT-4o, <br>GPT-4o-mini, <br>Gemini-2.0-Flash
