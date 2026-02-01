@@ -17,7 +17,10 @@ The horizontal axis indicates whether LLM parameters are trained, and the vertic
 (b) Bridging Alignment introduces temporal modification while still employing frozen LLMs. This design enables joint processing of time series and textual inputs while preserving all parameters of the original LLM.
 (c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
 
-### Relevant Survey:
+## Application Example:
+We provide an [example](https://pan.ruc.edu.cn/anyshare/zh-cn/foxitreader?tb=none&gns=478FFF29222B42029F87EA043A3CE73C%2F994E76D359AF43959780616E40D9CCF9&linkId=AA8A85E9B6CFDC4AB1831DBA127ECACE03&name=example.pdf) to illustrate our alignment paradigm that can help readers understand the papers more quickly.
+
+## Relevant Survey:
 
 Date|Paper|Institute|Publication
 ---|---|---|---
@@ -36,7 +39,7 @@ Date|Paper|Institute|Publication
 18 <br>May <br>2023|[A Survey on Time-Series Pre-Trained Models](https://arxiv.org/abs/2305.10716)|South China University of Technology|TKDE'24
 3 <br>May <br>2023|[A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model](https://arxiv.org/abs/2405.02358)|Hong Kong University of Science and Technology|Preprint
 
-### Relevant Datasets and Benchmarks:
+## Relevant Datasets and Benchmarks:
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
@@ -52,7 +55,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 28 <br>Oct <br>2023|[Insight Miner: A Time Series Analysis Dataset for Cross-Domain Alignment with Natural Language](https://openreview.net/forum?id=E1khscdUdH&referrer=%5Bthe%20profile%20of%20Ming%20Zheng%5D(%2Fprofile%3Fid%3D~Ming_Zheng2))|University of California, Berkeley|NeurIPS'23 Workshop|General|LLaVA, <br>GPT-4
 27 <br>Oct <br>2023|[JoLT: Jointly Learned Representations of Language and Time-Series](https://openreview.net/forum?id=UVF1AMBj9u&referrer=%5Bthe%20profile%20of%20Yifu%20Cai%5D(%2Fprofile%3Fid%3D~Yifu_Cai1))|Carnegie Mellon University|NeurIPS'23 Workshop|Medical|GPT-2, <br>OPT
 
-### Injective Alignment:
+## Injective Alignment:
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
@@ -78,7 +81,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 10 <br>Apr <br>2023|[The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over MultiModal Stock Movement Prediction Challenges](https://arxiv.org/abs/2304.05351)|Wuhan University|Preprint|Financial|ChatGPT
 1 <br>Jan <br>2023|[Unleashing the Power of Shared Label Structures for Human Activity Recognition (SHARE)](https://arxiv.org/abs/2301.03462)|University of California|CIKM'23|IoT|GPT-4
 
-### Bridging Alignment:
+## Bridging Alignment:
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
 20 <br>Jan <br>2026|[ChatAD: Reasoning-Enhanced Time-Series Anomaly Detection with Multi-Turn Instruction Evolution](https://arxiv.org/abs/2601.13546)|Nankai University|Preprint|General|GPT-5, <br>DeepSeek-R1
@@ -130,7 +133,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 6 <br>Sep <br>2023|[ETP: Learning Transferable ECG Representations via ECG-Text Pre-training](https://arxiv.org/abs/2309.07145)|Imperial College London|ICASSP'24|Medical|BERT
 21 <br>Jan <br>2023|[Transfer Knowledge from Natural Language to Electrocardiography: Can We Detect Cardiovascular Disease Through Language Models? (ECG-LLM)](https://arxiv.org/abs/2301.09017)|Carnegie Mellon University|EACL'23 Findings|Medical|BERT, <br>BART
 
-### Internal Alignment:
+## Internal Alignment:
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
