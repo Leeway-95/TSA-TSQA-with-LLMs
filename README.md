@@ -2,13 +2,15 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/Leeway-95/TSA-TSQA-with-LLMs?style=social)](https://github.com/Leeway-95/TSA-TSQA-with-LLMs/stargazers)
 ![Topic](https://img.shields.io/badge/Time%20Series-TSA--TSQA-blueviolet)
+<!--
 [![How to Cite](https://img.shields.io/badge/Cite-bibtex-orange)](#citation)
+-->
 
 ✨ If you find our <em>position</em> useful for your research, please consider giving it a <strong>star ⭐ on GitHub</strong> to stay updated with future releases.
 
 ## Abstract
-Recently, Large Language Models (LLMs) have introduced a novel paradigm in Time Series Analysis (TSA), leveraging strong language capabilities to support tasks such as forecasting and anomaly detection. However, these analysis tasks cannot adequately cover temporal language tasks, such as interpretation and captioning. A fundamental gap remains between TSA and LLMs: LLMs are pre-trained to optimize natural language relevance for question answering rather than objectives specialized for TSA. To bridge this gap, TSA is evolving toward Time Series Question Answering (TSQA), shifting from expert-driven and task-specific analysis to user-driven and task-unified question answering. TSQA depends on flexible exploration rather than predefined TSA pipelines. 
-We propose a taxonomy that reflects the evolution from TSA to TSQA, driven by a shift from external to internal alignment. We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment, and provide practical guidance for flexible, economical, and generalizable selection of alignment paradigms.
+Time Series Analysis (TSA) is evolving toward Time Series Question Answering (TSQA), shifting from expert-driven and task-specific analysis to user-driven and task-unified question answering. TSQA depends on flexible exploration rather than predefined TSA pipelines. 
+We propose a taxonomy that reflects the evolution from TSA to TSQA, driven by a shift from external to internal alignment. We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
 
@@ -18,7 +20,7 @@ The horizontal axis indicates whether LLM parameters are trained, and the vertic
 (c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
 
 ## Application Example:
-We provide an [example](https://pan.ruc.edu.cn/anyshare/zh-cn/foxitreader?tb=none&gns=478FFF29222B42029F87EA043A3CE73C%2F994E76D359AF43959780616E40D9CCF9&linkId=AA8A85E9B6CFDC4AB1831DBA127ECACE03&name=example.pdf) to illustrate our alignment paradigm that can help readers understand the papers more quickly.
+We provide an [example](http://202.112.113.250:8888/view/example.pdf) to illustrate our alignment paradigm that can help readers understand the papers more quickly.
 
 ## Relevant Survey:
 
