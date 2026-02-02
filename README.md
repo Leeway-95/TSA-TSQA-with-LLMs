@@ -23,7 +23,7 @@ These two dimensions determine the three alignment paradigms.
 (c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
 
 ## Application Example:
-We provide an [example](http://202.112.113.250:8888/view/example.pdf) to illustrate our alignment paradigm that can help readers understand the papers more quickly.
+We provide an [example](http://202.112.113.249:8889/paper/view/example.pdf) to illustrate our alignment paradigm that can help readers understand the papers more quickly.
 
 ## Relevant Survey:
 
