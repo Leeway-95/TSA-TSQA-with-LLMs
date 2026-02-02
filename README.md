@@ -7,14 +7,17 @@
 -->
 
 ✨ If you find our <em>position</em> useful for your research, please consider giving it a <strong>star ⭐ on GitHub</strong> to stay updated with future releases.
-
+##
+<!--
 ## Abstract
+-->
 Time Series Analysis (TSA) is evolving toward Time Series Question Answering (TSQA), shifting from expert-driven and task-specific analysis to user-driven and task-unified question answering. TSQA depends on flexible exploration rather than predefined TSA pipelines. 
 We propose a taxonomy that reflects the evolution from TSA to TSQA, driven by a shift from external to internal alignment. We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
 
-The horizontal axis indicates whether LLM parameters are trained, and the vertical axis indicates whether temporal modifications are required. Temporal modification refers to adapting time series for LLMs, including both modifications outside the LLM and adjustments to the internal LLM architecture. These two dimensions determine the three alignment paradigms.
+The horizontal axis indicates whether the LLM parameters are trained, while the vertical axis indicates whether temporal modifications are required. Temporal modifications refer to changes to external modules or the internal LLM architecture to adapt to time series.
+These two dimensions determine the three alignment paradigms.
 (a) Injective Alignment involves no temporal modification and adopts frozen LLMs. This design preserves the original LLM parameters.
 (b) Bridging Alignment introduces temporal modification while still employing frozen LLMs. This design enables joint processing of time series and textual inputs while preserving all parameters of the original LLM.
 (c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
