@@ -6,13 +6,17 @@
 [![How to Cite](https://img.shields.io/badge/Cite-bibtex-orange)](#citation)
 -->
 
-✨ If you find our <em>position</em> useful for your research, please consider giving it a <strong>star ⭐ on GitHub</strong> to stay updated with future releases.
-##
+✨ If you find our work useful for your research, please consider giving it a <strong>star ⭐ on GitHub</strong> to stay updated with future releases.
+
 <!--
 ## Abstract
 -->
-Time Series Analysis (TSA) is evolving toward Time Series Question Answering (TSQA), shifting from expert-driven and task-specific analysis to user-driven and task-unified question answering. TSQA depends on flexible exploration rather than predefined TSA pipelines. 
-We propose a taxonomy that reflects the evolution from TSA to TSQA, driven by a shift from external to internal alignment. We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment.
+
+## [🌐 **Application Example**](http://202.112.113.249:8889/paper/view/example.pdf)
+We applied our taxonomy to a literature interpretation application and provide an [example](http://202.112.113.249:8889/paper/view/example.pdf), which uses it to retrieve the latest relevant literature and assist readers in quickly and clearly understanding the content.
+
+## Alignment Paradigm Taxonomy
+We propose a taxonomy that reflects the evolution from Time Series Analysis (TSA) to Time Series Question Answering (TSQA), driven by a shift from external to internal alignment.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
 
@@ -22,43 +26,7 @@ These two dimensions determine the three alignment paradigms.
 (b) Bridging Alignment introduces temporal modification while still employing frozen LLMs. This design enables joint processing of time series and textual inputs while preserving all parameters of the original LLM.
 (c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
 
-## Application Example:
-We provide an [example](http://202.112.113.249:8889/paper/view/example.pdf) to illustrate our alignment paradigm that can help readers understand the papers more quickly.
-
-## Relevant Survey:
-
-Date|Paper|Institute|Publication
----|---|---|---
-5 <br>Nov <br>2025|[A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models](https://arxiv.org/abs/2509.11575)|University of California|Preprint
-2 <br>Oct <br>2025|[How Can Time Series Analysis Benefit From Multiple Modalities? A Survey and Outlook](https://arxiv.org/abs/2503.11835)|Georgia Institute of Technology|Preprint
-1 <br>Sep <br>2025|[When LLM Meets Time Series: Can LLMs Perform Multi-Step Time Series Reasoning and Inference](https://arxiv.org/abs/2509.11575)|University of Southern California|Preprint
-5 <br>May <br>2025|[Towards Cross-Modality Modeling for Time Series Analytics: A Survey in the LLM Era](https://arxiv.org/abs/2505.02583)|Nanyang Technological University|IJCAI'25
-17 <br>Mar <br>2025|[Multi-modal Time Series Analysis: A Tutorial and Survey](https://arxiv.org/abs/2503.13709)|University of Connecticut|KDD'25
-12 <br>Mar <br>2025|[Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey](https://arxiv.org/abs/2503.13502)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'25
-3 <br>Feb <br>2025|[Position: Empowering Time Series Reasoning with Multimodal LLMs](https://arxiv.org/abs/2502.01477)|University of Oxford|Preprint
-21 <br>Mar <br>2024|[Foundation Models for Time Series Analysis: A Tutorial and Survey](https://arxiv.org/abs/2403.14735)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'24
-5 <br>Feb <br>2024|[Empowering Time Series Analysis with Large Language Models: A Survey](https://arxiv.org/abs/2402.03182)|University of Connecticut, USA|IJCAI'24
-5 <br>Feb <br>2024|[Position: What Can Large Language Models Tell Us about Time Series Analysis](https://arxiv.org/abs/2402.02713)|Griffith University|ICML'24
-2 <br>Feb <br>2024|[Large Language Models for Time Series: A Survey](https://arxiv.org/abs/2402.01801)|University of California, San Diego|IJCAI'24
-16 <br>Oct <br>2023|[Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook](https://arxiv.org/abs/2310.10196)|Monash University|Preprint
-18 <br>May <br>2023|[A Survey on Time-Series Pre-Trained Models](https://arxiv.org/abs/2305.10716)|South China University of Technology|TKDE'24
-3 <br>May <br>2023|[A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model](https://arxiv.org/abs/2405.02358)|Hong Kong University of Science and Technology|Preprint
-
-## Relevant Datasets and Benchmarks:
-
-Date|Paper|Institute|Publication|Domain|LLMs
----|---|---|---|---|---
-7 <br>Nov <br>2025|[QuAnTS: Question Answering on Time Series](https://arxiv.org/abs/2511.05124)**[**[**Code**](https://github.com/mauricekraus/quants-generate)**]**|TU Darmstadt|Preprint|IoT|Llama3.1-8B
-21 <br>Mar <br>2025|[MTBench: A Multimodal Time Series Benchmark for Temporal Reasoning and Question Answering](https://arxiv.org/abs/2503.16858)**[**[**Code**](https://github.com/Graph-and-Geometric-Learning/MTBench)**]**|Yale University|Preprint|Financial|GPT-4o, <br>Gemini, <br>Claude, <br>DeepSeek, <br>Llama3.1
-25 <br>Jun <br>2025|[ITFormer: Bridging Time Series and Natural Language for Multi-Modal QA with Large-Scale Multitask Dataset](https://arxiv.org/abs/2506.20093)**[**[**Code**](https://pandalin98.github.io/itformer_site/)**]**|Shanghai Jiao Tong University|ICML'25|General|GPT-4o, <br>Gemini-Pro
-5 <br>Jun <br>2025|[Context is Key: A Benchmark for Forecasting with Essential Textual Information (CiK)](https://arxiv.org/abs/2410.18959)**[**[**Code**](https://servicenow.github.io/context-is-key-forecasting/v0/)**]**|ServiceNow Research|ICML'25|General|Qwen-2.5-7B, <br>Llama-3-70B, <br>Llama-3.1-405B
-13 <br>Mar <br>2025|[Chat-TS: Enhancing Multi-Modal Reasoning Over Time-Series and Natural Language Data](https://arxiv.org/abs/2503.10883)|Queen’s University|Preprint|General|LLama 3.1-8B
-3 <br>Mar <br>2025|[SensorQA: A Question Answering Benchmark for Daily-Life Monitoring](https://arxiv.org/abs/2501.04974)**[**[**Code**](https://github.com/benjamin-reichman/SensorQA)**]**|Georgia Institute of Technology|SenSys'25|IoT|GPT-3.5-Turbo, <br>GPT-4-Turbo 
-18 <br>Oct <br>2024|[TimeSeriesExam: A time series understanding exam](https://arxiv.org/abs/2410.14752)**[**[**Code**](https://huggingface.co/datasets/AutonLab/TimeSeriesExam1)**]**|Carnegie Mellon University|NeurIPS'24 Workshop|General|GPT-4o, Gemini, Phi3.5
-12 <br>Jun <br>2024|[Time-MMD: Multi-Domain Multimodal Dataset for Time Series Analysis](https://arxiv.org/abs/2406.08627)**[**[**Code**](https://github.com/AdityaLab/Time-MMD)**]**|Georgia Institute of Technology|NeurIPS'24|General|LLaMA-3, <br>GPT-2
-17 <br>Apr <br>2024|[Language Models Still Struggle to Zero-shot Reason about Time Series (TSandLanguage)](https://arxiv.org/abs/2404.11757)**[**[**Code**](https://github.com/behavioral-data/TSandLanguage)**]**|University of Washington|EMNLP'24 (Findings)|General|GPT-4 
-28 <br>Oct <br>2023|[Insight Miner: A Time Series Analysis Dataset for Cross-Domain Alignment with Natural Language](https://openreview.net/forum?id=E1khscdUdH&referrer=%5Bthe%20profile%20of%20Ming%20Zheng%5D(%2Fprofile%3Fid%3D~Ming_Zheng2))|University of California, Berkeley|NeurIPS'23 Workshop|General|LLaVA, <br>GPT-4
-27 <br>Oct <br>2023|[JoLT: Jointly Learned Representations of Language and Time-Series](https://openreview.net/forum?id=UVF1AMBj9u&referrer=%5Bthe%20profile%20of%20Yifu%20Cai%5D(%2Fprofile%3Fid%3D~Yifu_Cai1))|Carnegie Mellon University|NeurIPS'23 Workshop|Medical|GPT-2, <br>OPT
+We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment.
 
 ## Injective Alignment:
 
@@ -153,6 +121,42 @@ Date|Paper|Institute|Publication|Domain|LLMs
 13 <br>Aug <br>2024|[GenG: An LLM-Based Generic Time Series Data Generation Approach for Edge Intelligence via Cross-Domain Collaboration](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10620716)|Future Network Research Center, Purple Mountain Laboratories|INFOCOM'24|IoT|LLaMA
 19 <br>Mar <br>2024|[Advancing Time Series Classification with Multimodal Language Modeling (InstructTime)](https://arxiv.org/abs/2403.12371)**[**[**Code**](https://github.com/Mingyue-Cheng/InstructTime)**]**|University of Science and Technology of China|WSDM'25|General|GPT-2
 21 <br>Dec <br>2023|[BloombergGPT: A Large Language Model for Finance](https://arxiv.org/abs/2303.17564)|Bloomberg|Preprint|Financial|GPT-NeoX, <br>OPT, <br>BLOOM
+
+
+## Relevant Survey:
+
+Date|Paper|Institute|Publication
+---|---|---|---
+5 <br>Nov <br>2025|[A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models](https://arxiv.org/abs/2509.11575)|University of California|Preprint
+2 <br>Oct <br>2025|[How Can Time Series Analysis Benefit From Multiple Modalities? A Survey and Outlook](https://arxiv.org/abs/2503.11835)|Georgia Institute of Technology|Preprint
+1 <br>Sep <br>2025|[When LLM Meets Time Series: Can LLMs Perform Multi-Step Time Series Reasoning and Inference](https://arxiv.org/abs/2509.11575)|University of Southern California|Preprint
+5 <br>May <br>2025|[Towards Cross-Modality Modeling for Time Series Analytics: A Survey in the LLM Era](https://arxiv.org/abs/2505.02583)|Nanyang Technological University|IJCAI'25
+17 <br>Mar <br>2025|[Multi-modal Time Series Analysis: A Tutorial and Survey](https://arxiv.org/abs/2503.13709)|University of Connecticut|KDD'25
+12 <br>Mar <br>2025|[Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey](https://arxiv.org/abs/2503.13502)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'25
+3 <br>Feb <br>2025|[Position: Empowering Time Series Reasoning with Multimodal LLMs](https://arxiv.org/abs/2502.01477)|University of Oxford|Preprint
+21 <br>Mar <br>2024|[Foundation Models for Time Series Analysis: A Tutorial and Survey](https://arxiv.org/abs/2403.14735)|The Hong Kong University of Science and Technology (Guangzhou)|KDD'24
+5 <br>Feb <br>2024|[Empowering Time Series Analysis with Large Language Models: A Survey](https://arxiv.org/abs/2402.03182)|University of Connecticut, USA|IJCAI'24
+5 <br>Feb <br>2024|[Position: What Can Large Language Models Tell Us about Time Series Analysis](https://arxiv.org/abs/2402.02713)|Griffith University|ICML'24
+2 <br>Feb <br>2024|[Large Language Models for Time Series: A Survey](https://arxiv.org/abs/2402.01801)|University of California, San Diego|IJCAI'24
+16 <br>Oct <br>2023|[Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook](https://arxiv.org/abs/2310.10196)|Monash University|Preprint
+18 <br>May <br>2023|[A Survey on Time-Series Pre-Trained Models](https://arxiv.org/abs/2305.10716)|South China University of Technology|TKDE'24
+3 <br>May <br>2023|[A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model](https://arxiv.org/abs/2405.02358)|Hong Kong University of Science and Technology|Preprint
+
+## Relevant Datasets and Benchmarks:
+
+Date|Paper|Institute|Publication|Domain|LLMs
+---|---|---|---|---|---
+7 <br>Nov <br>2025|[QuAnTS: Question Answering on Time Series](https://arxiv.org/abs/2511.05124)**[**[**Code**](https://github.com/mauricekraus/quants-generate)**]**|TU Darmstadt|Preprint|IoT|Llama3.1-8B
+21 <br>Mar <br>2025|[MTBench: A Multimodal Time Series Benchmark for Temporal Reasoning and Question Answering](https://arxiv.org/abs/2503.16858)**[**[**Code**](https://github.com/Graph-and-Geometric-Learning/MTBench)**]**|Yale University|Preprint|Financial|GPT-4o, <br>Gemini, <br>Claude, <br>DeepSeek, <br>Llama3.1
+25 <br>Jun <br>2025|[ITFormer: Bridging Time Series and Natural Language for Multi-Modal QA with Large-Scale Multitask Dataset](https://arxiv.org/abs/2506.20093)**[**[**Code**](https://pandalin98.github.io/itformer_site/)**]**|Shanghai Jiao Tong University|ICML'25|General|GPT-4o, <br>Gemini-Pro
+5 <br>Jun <br>2025|[Context is Key: A Benchmark for Forecasting with Essential Textual Information (CiK)](https://arxiv.org/abs/2410.18959)**[**[**Code**](https://servicenow.github.io/context-is-key-forecasting/v0/)**]**|ServiceNow Research|ICML'25|General|Qwen-2.5-7B, <br>Llama-3-70B, <br>Llama-3.1-405B
+13 <br>Mar <br>2025|[Chat-TS: Enhancing Multi-Modal Reasoning Over Time-Series and Natural Language Data](https://arxiv.org/abs/2503.10883)|Queen’s University|Preprint|General|LLama 3.1-8B
+3 <br>Mar <br>2025|[SensorQA: A Question Answering Benchmark for Daily-Life Monitoring](https://arxiv.org/abs/2501.04974)**[**[**Code**](https://github.com/benjamin-reichman/SensorQA)**]**|Georgia Institute of Technology|SenSys'25|IoT|GPT-3.5-Turbo, <br>GPT-4-Turbo 
+18 <br>Oct <br>2024|[TimeSeriesExam: A time series understanding exam](https://arxiv.org/abs/2410.14752)**[**[**Code**](https://huggingface.co/datasets/AutonLab/TimeSeriesExam1)**]**|Carnegie Mellon University|NeurIPS'24 Workshop|General|GPT-4o, Gemini, Phi3.5
+12 <br>Jun <br>2024|[Time-MMD: Multi-Domain Multimodal Dataset for Time Series Analysis](https://arxiv.org/abs/2406.08627)**[**[**Code**](https://github.com/AdityaLab/Time-MMD)**]**|Georgia Institute of Technology|NeurIPS'24|General|LLaMA-3, <br>GPT-2
+17 <br>Apr <br>2024|[Language Models Still Struggle to Zero-shot Reason about Time Series (TSandLanguage)](https://arxiv.org/abs/2404.11757)**[**[**Code**](https://github.com/behavioral-data/TSandLanguage)**]**|University of Washington|EMNLP'24 (Findings)|General|GPT-4 
+28 <br>Oct <br>2023|[Insight Miner: A Time Series Analysis Dataset for Cross-Domain Alignment with Natural Language](https://openreview.net/forum?id=E1khscdUdH&referrer=%5Bthe%20profile%20of%20Ming%20Zheng%5D(%2Fprofile%3Fid%3D~Ming_Zheng2))|University of California, Berkeley|NeurIPS'23 Workshop|General|LLaVA, <br>GPT-4
+27 <br>Oct <br>2023|[JoLT: Jointly Learned Representations of Language and Time-Series](https://openreview.net/forum?id=UVF1AMBj9u&referrer=%5Bthe%20profile%20of%20Yifu%20Cai%5D(%2Fprofile%3Fid%3D~Yifu_Cai1))|Carnegie Mellon University|NeurIPS'23 Workshop|Medical|GPT-2, <br>OPT
 
 <!--
 ### Dataset
