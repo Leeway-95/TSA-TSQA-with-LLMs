@@ -13,20 +13,22 @@
 -->
 
 ## [🌐 **Application Example**](http://202.112.113.249:8889/paper/view/example.pdf)
-We applied our taxonomy to a literature interpretation application and provide an [example](http://202.112.113.249:8889/paper/view/example.pdf), which uses it to retrieve the latest relevant literature and assist readers in quickly and clearly understanding the content.
+We applied our taxonomy to a literature interpretation tool and provided an [example](http://202.112.113.249:8889/paper/view/example.pdf) that retrieves the latest relevant literature, helping readers quickly and clearly grasp the content.
 
 ## Alignment Paradigm Taxonomy
 We propose a taxonomy that reflects the evolution from Time Series Analysis (TSA) to Time Series Question Answering (TSQA), driven by a shift from external to internal alignment.
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
 
-The horizontal axis indicates whether the LLM parameters are trained, while the vertical axis indicates whether temporal modifications are required. Temporal modifications refer to changes to external modules or the internal LLM architecture to adapt to time series.
-These two dimensions determine the three alignment paradigms.
-(a) Injective Alignment involves no temporal modification and adopts frozen LLMs. This design preserves the original LLM parameters.
-(b) Bridging Alignment introduces temporal modification while still employing frozen LLMs. This design enables joint processing of time series and textual inputs while preserving all parameters of the original LLM.
-(c) Internal Alignment combines temporal modification with training LLMs through parameter updating to provide native support for time series.
+The horizontal axis indicates whether LLMs are trained, while the vertical axis indicates whether temporal modifications are required.
+Temporal modifications refer to adjustments to external modules or the internal LLM architecture for time series adaptation.
 
-We organize existing literature into three alignment paradigms: Injective Alignment, Bridging Alignment, and Internal Alignment.
+These two dimensions determine three alignment paradigms.<br>
+(a) Injective Alignment: No temporal modification is required, and frozen LLMs are employed.<br>
+(b) Bridging Alignment: Temporal modification is required, but frozen LLMs are still employed.<br>
+(c) Internal Alignment: Temporal modification is optional with LLM training.
+
+We organize existing literature into the three alignment paradigms.
 
 ## Injective Alignment:
 
