@@ -1,4 +1,4 @@
-# From Time Series Analysis to Question Answering: A Survey in the LLM Era
+# (IJCAI'26) From Time Series Analysis to Question Answering: A Survey in the LLM Era
 
 [![GitHub Stars](https://img.shields.io/github/stars/Leeway-95/TSA-TSQA-with-LLMs?style=social)](https://github.com/Leeway-95/TSA-TSQA-with-LLMs/stargazers)
 ![Topic](https://img.shields.io/badge/Time%20Series-TSA--TSQA-blueviolet)
@@ -10,32 +10,42 @@
 
 <!--
 ## Abstract
--->
 
 ## [🌐 **Application Example**](http://202.112.113.249:8889/paper/view/example.pdf)
 We applied our taxonomy to a literature interpretation tool and provided an [example](http://202.112.113.249:8889/paper/view/example.pdf) that retrieves the latest relevant literature, helping readers quickly and clearly grasp the content.
+-->
 
-## Alignment Paradigm Taxonomy
-We propose a taxonomy that reflects the evolution from Time Series Analysis (TSA) to Time Series Question Answering (TSQA), driven by a shift from external to internal alignment.
+## 
+<img width="5653" height="1430" alt="image" src="https://github.com/user-attachments/assets/e788e86d-00c8-47dc-9250-6218da89ebb5" />
+<br>
+Taxonomy of relevant literature across three alignment paradigms. The icon to the left of each method indicates its domain, while the absence of this icon denotes a general domain. The icon on the right denotes the use of time series visual plots. The background color of each method represents task targets: lighter shades denote time series analysis (TSA), and darker shades denote time series question answering (TSQA). The TSA literature dominates external Injective and Bridging Alignment, whereas the TSQA literature dominates Internal Alignment, reflecting <strong>the evolution from TSA to TSQA driven by a shift from external to internal alignment</strong>. Compared with existing surveys, this evolution perspective integrates previously isolated TSA and TSQA research into a unified taxonomy of alignment paradigms.
 
-<img width="550" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
+## Alignment Paradigm
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/10fcb059-af69-4573-9ad4-b8fcde8bc27f" />
+<br>
+The horizontal axis indicates whether LLM parameters are trained, and the vertical axis indicates whether temporal modifications are required. Temporal modification refers to adapting time series for LLMs, including both modifications outside the LLM and adjustments to the internal LLM architecture. These two dimensions determine the three alignment paradigms.<br>
+(a) <strong>Injective Alignment</strong> involves no temporal modification and adopts frozen LLMs. This design preserves the original LLM parameters.<br>
+(b) <strong>Bridging Alignment</strong> introduces temporal modification while still employing frozen LLMs. This design enables joint processing of time series and textual inputs while preserving all parameters of the original LLM.<br>
+(c) <strong>Internal Alignment</strong> combines temporal modification with training LLMs by parameter updating to provide native support for time series. 
 
-The horizontal axis indicates whether LLMs are trained, while the vertical axis indicates whether temporal modifications are required.
-Temporal modifications refer to adjustments to external modules or the internal LLM architecture for time series adaptation.
+## 
+We organize existing literature into the three alignment paradigms, along with related surveys and datasets.
 
-These two dimensions determine three alignment paradigms.<br>
-(a) Injective Alignment: No temporal modification is required, and frozen LLMs are employed.<br>
-(b) Bridging Alignment: Temporal modification is required, but frozen LLMs are still employed.<br>
-(c) Internal Alignment: Temporal modification is optional with LLM training.
+- [Taxonomy](#taxonomy)
+  - [Injective](#injective)
+  - [Bridging](#bridging)
+  - [Internal](#internal)
+- [Survey](#survey)
+- [Dataset](#dataset)
 
-We organize existing literature into the three alignment paradigms.
+## Taxonomy
 
-## Injective Alignment:
+### Injective
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
 12 <br>Jan<br>2026|[Enhancing Large Language Models for Time-Series Forecasting via Vector-Injected In-Context Learnin (LVICL)](https://arxiv.org/abs/2601.07903)|Institute of Software, Chinese Academy of Sciences|Preprint|General|LLaMA-7B, <br>GPT-2
-11 <br>May<br>2025|[Can LLMs Understand Time Series Anomalies? (AnomLLM)](https://arxiv.org/abs/2410.05440)|University of California|ICLR'25|General|Qwen-VL-Chat, <br>InternVL2-Llama3-76B, <br>GPT-4o-mini, <br>Gemini-1.5-Flash
+11 <br>May<br>2025|[Can LLMs Understand Time Series Anomalies? (AnomLLM)](https://arxiv.org/abs/2410.05440)|University of California|ICLR'25|General|GPT-4o-mini, <br>Gemini-1.5-Flash
 25 <br>Apr <br>2025|[A Picture is Worth A Thousand Numbers: Enabling LLMs Reason about Time Series via Visualization (TimerBed)](https://arxiv.org/abs/2411.06018)**[**[**Code**](https://github.com/AdityaLab/DeepTime/)**]**|Georgia Institute of Technology|NAACL'25|General|GPT-4o-mini, <br>Qwen2-VL-72B
 16 <br>Feb <br>2025|[TableTime: Reformulating Time Series Classification as Training-Free Table Understanding with Large Language Models](https://arxiv.org/abs/2411.15737)**[**[**Code**](https://anonymous.4open.science/r/TableTime-5E4D)**]**|University of Science and Technology of China|CIKM'25|General|Llama-3.1
 24 <br>Jan <br>2025|[Argos: Agentic Time-Series Anomaly Detection with Autonomous Rule Generation via Large Language Models](https://arxiv.org/abs/2501.14170)|University of Washington|Preprint|General|GPT-3.5-Turbo, <br>GPT-4o
@@ -56,7 +66,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 10 <br>Apr <br>2023|[The Wall Street Neophyte: A Zero-Shot Analysis of ChatGPT Over MultiModal Stock Movement Prediction Challenges](https://arxiv.org/abs/2304.05351)|Wuhan University|Preprint|Financial|ChatGPT
 1 <br>Jan <br>2023|[Unleashing the Power of Shared Label Structures for Human Activity Recognition (SHARE)](https://arxiv.org/abs/2301.03462)|University of California|CIKM'23|IoT|GPT-4
 
-## Bridging Alignment:
+### Bridging:
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
 20 <br>Jan <br>2026|[ChatAD: Reasoning-Enhanced Time-Series Anomaly Detection with Multi-Turn Instruction Evolution](https://arxiv.org/abs/2601.13546)|Nankai University|Preprint|General|GPT-5, <br>DeepSeek-R1
@@ -108,7 +118,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 6 <br>Sep <br>2023|[ETP: Learning Transferable ECG Representations via ECG-Text Pre-training](https://arxiv.org/abs/2309.07145)|Imperial College London|ICASSP'24|Medical|BERT
 21 <br>Jan <br>2023|[Transfer Knowledge from Natural Language to Electrocardiography: Can We Detect Cardiovascular Disease Through Language Models? (ECG-LLM)](https://arxiv.org/abs/2301.09017)|Carnegie Mellon University|EACL'23 Findings|Medical|BERT, <br>BART
 
-## Internal Alignment:
+### Internal:
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
@@ -125,7 +135,7 @@ Date|Paper|Institute|Publication|Domain|LLMs
 21 <br>Dec <br>2023|[BloombergGPT: A Large Language Model for Finance](https://arxiv.org/abs/2303.17564)|Bloomberg|Preprint|Financial|GPT-NeoX, <br>OPT, <br>BLOOM
 
 
-## Relevant Survey:
+### Survey:
 
 Date|Paper|Institute|Publication
 ---|---|---|---
@@ -144,7 +154,7 @@ Date|Paper|Institute|Publication
 18 <br>May <br>2023|[A Survey on Time-Series Pre-Trained Models](https://arxiv.org/abs/2305.10716)|South China University of Technology|TKDE'24
 3 <br>May <br>2023|[A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model](https://arxiv.org/abs/2405.02358)|Hong Kong University of Science and Technology|Preprint
 
-## Relevant Datasets and Benchmarks:
+### Dataset:
 
 Date|Paper|Institute|Publication|Domain|LLMs
 ---|---|---|---|---|---
