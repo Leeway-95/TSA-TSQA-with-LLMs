@@ -192,17 +192,15 @@ Dataset|Domain|Characteristic|Representation|Statistic
 ## Contact Us
 For inquiries or further assistance, contact us at [leeway@ruc.edu.cn](mailto:leeway@ruc.edu.cn).
 
-<!--
 ## Citation
 
-If you find this useful, please cite our paper: "Aligning Time Series Data with Large Language Models: A Survey".
+If you find this useful, please cite our paper: "[From Time Series Analysis to Question Answering: A Survey in the LLM Era](https://arxiv.org/abs/2506.11512)".
 
 ```
-@article{zhang2024large,
-  title={Large Language Models for Time Series: A Survey},
-  author={Zhang, Xiyuan and Chowdhury, Ranak Roy and Gupta, Rajesh K and Shang, Jingbo},
-  journal={arXiv preprint arXiv:2402.01801},
-  year={2024}
+@article{li2026tsa2tsqa,
+      title={From Time Series Analysis to Question Answering: A Survey in the LLM Era}, 
+      author={Wei Li and Zhe Xie and Yuxuan Liang and Xinli Hao and Yunyao Cheng and Dan Pei and Xiaofeng Meng},
+      journal={arXiv preprint arXiv:2506.11512},
+      year={2026}
 }
 ```
--->
