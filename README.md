@@ -12,7 +12,7 @@
 ## Abstract
 -->
 ## [🌐 **Application**](http://202.112.113.249:8889/paper/view/example.pdf)
-We applied our taxonomy to a literature interpretation tool and provided an [example](http://202.112.113.249:8889/paper/view/example.pdf) that retrieves the latest relevant literature, helping readers quickly and clearly grasp the content.
+We applied our taxonomy to a literature interpretation tool and provided an [Example](http://202.112.113.249:8889/paper/view/example.pdf) that retrieves the latest relevant literature, helping readers quickly and clearly understand related works. We also provide a free and general [ScholarAgent](http://cdblp.ruc-wamdm.cn/agent/) for subscription and use.
 
 
 ## [📚 **Paper**](https://arxiv.org/abs/2506.11512)
